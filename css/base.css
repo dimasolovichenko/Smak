@@ -1,0 +1,31 @@
+:root {
+    --accent-color: #ffe600;
+    --bg-light: #fbfbfb;
+    --bg-green: #11343a;
+    --bg-dgreen: #112a2f;
+    --bg-ddgreen: #12191d;
+    --bg-dark: #131316;
+    --bg-image: #394948;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+    font: 300 16px/18px 'Oswald', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+.wrapper {
+	overflow: hidden;
+	position: relative;
+}
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+}
