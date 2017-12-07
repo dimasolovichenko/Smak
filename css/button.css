@@ -2,19 +2,23 @@
    display: inline-block;
    text-decoration: none;
    text-transform: uppercase;
-   font-family: Arial, sans-serif;
    color: #fff;
-   background-color: transparent;
-   font-size: 14px;
-   border: 2px solid #fff;
-   border-radius: 5px;
-   padding: 14px 20px;
-   margin: 5px;
+   background-color: var(--accent-color);
+   font-size: 15px;
+   line-height: 17px;
+   font-weight: 700;
+   padding: 14px 50px;
    cursor: pointer;
 }
 .button:hover,
 .button:focus {
-   color: #000;
-   background-color: #23b7a4;
-   border-color: #23b7a4;
+   color: #fff;
+   background-color: #000;
+}
+.button-main {
+    font-size: 20px;
+    line-height: 22px;
+}
+.button-anchor {
+    padding: 14px;
 }

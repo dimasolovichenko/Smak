@@ -11,7 +11,7 @@
 	box-sizing: border-box;
 }
 body {
-    font: 300 16px/18px 'Oswald', sans-serif;
+    font: 300 16px/22px 'Oswald', sans-serif;
 }
 a {
 	text-decoration: none;
@@ -26,6 +26,6 @@ img {
 	position: relative;
 }
 .container {
-	max-width: 80%;
+	max-width: 1200px;
 	margin: 0 auto;
 }

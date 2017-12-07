@@ -2,6 +2,8 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
+    padding: 55px 0;
+    text-align: center;
 }
 .section-background {
 	position: absolute;
@@ -39,10 +41,71 @@
 	flex-direction: column;
 	justify-content: center;
 }
+.section-heading {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-heading > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+.section-body > *:not(:last-child) {
+    margin-bottom: 30px;
+}
 .inverse {
 	color: #fff;
 }
-/*-------------------------HEADER-------------------------------------------------*/
+.section-title {
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #515151;
+}
+.section-subtitle {
+    vertical-align: middle;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.section-description {
+    text-align: center;
+}
+.h1 {
+    font-size: 65px;
+    line-height: 71px;
+}
+.underline {
+    width: 172px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+.list {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card {
+    vertical-align: top;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*-------------------------HEADER---------------------------------------------------*/
 .header {
   padding: 16px 0;
   background-color: var(--bg-dgreen);
@@ -86,4 +149,228 @@
 .header .active {
     color: var(--accent-color) !important;
 }
+/*-------------------------FOOTER---------------------------------------------------*/
+.footer {
+    background-color: var(--bg-dark);
+}
+.footer-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-left {
+    padding: 20px 0;
+}
+.footer-right {
+    padding-bottom: 20px;
+}
+.footer svg {
+    fill: #fff;
+    height: 20px;
+    width: 35px;
+}
+.footer svg:hover {
+    fill: var(--accent-color);
+}
+.copy span {
+    color: var(--accent-color);
+}
 /*----------------------------------------------------------------------------------*/
+.section-main {
+    padding: 290px 0;
+    height: 89vh;
+}
+.section-main .section-background {
+    background-color: var(--bg-green);
+}
+.section-main .section-content {
+    padding: 55px;
+    background-color: var(--bg-dgreen);
+    text-align: center;
+}
+.section-main .section-content .section-subtitle {
+    margin-bottom: 35px;
+}
+.section-main .anchor {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 30px);
+}
+/*----------------------------------------------------------------------------------*/
+.section-services {
+    background-color: var(--bg-light);
+}
+.card-service svg {
+    width: 41px;
+    height: 41px;
+    fill: #fff;
+}
+.card-service .card-image {
+    padding: 30px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+/*----------------------------------------------------------------------------------*/
+.section-doit {
+    background-color: var(--bg-ddgreen);
+}
+.section-doit .section-subtitle {
+    color: var(--accent-color);
+}
+.card-doit svg {
+    width: 45px;
+    height: 45px;
+}
+/*----------------------------------------------------------------------------------*/
+.list-filter {
+    justify-content: center;
+    margin: 40px 0;
+}
+.list-filter a {
+    text-decoration: none;
+    color: #515151;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.list-filter a:hover {
+    color: var(--accent-color);
+}
+.list-filter > *:not(:last-child)::after {
+    content: ' ';
+    position: absolute;
+    right: -3px;
+    top: calc(50% - 3px);
+    width: 5px;
+    height: 5px;
+    background-color: var(--accent-color);
+}
+.list-filter .list-item {
+    position: relative;
+}
+.list-filter a {
+    padding: 10px 25px;
+}
+.list-filter .active {
+    color: var(--accent-color) !important;
+}
+.section-works .card-expand {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.section-works .card-expand .card-left {
+    min-width: 55%;
+    height: 440px;
+    position: relative;
+}
+.section-works .card-expand .card-image-bg {
+    position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-size: cover;
+    background-color: var(--bg-green);
+}
+.section-works .card-expand .card-right {
+    padding: 50px;
+    text-align: left;
+}
+.section-works .card-expand .card-right > *:not(:last-child) {
+    margin-bottom: 40px;
+}
+.section-works .card-expand .button-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    color: var(--accent-color);
+    font-size: 25px;
+}
+.section-works .card-expand .button-close:hover {
+    color: #000;
+}
+.list-portfolio {
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+.list-portfolio .list-item {
+    height: 250px;
+    position: relative;
+}
+.list-portfolio .list-item:nth-child(odd) {
+    background-color: var(--bg-green);
+}
+.list-portfolio .list-item:nth-child(even) {
+    background-color: var(--bg-image);
+}
+.list-portfolio .card-image {
+    height: 100%;
+    background: url('http://fakeimg.pl/350x200/?text=World&font=lobster') no-repeat center center;
+    background-size: cover;
+}
+.list-portfolio .card-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--accent-color);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.list-portfolio .list-item:hover .card-hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+/*----------------------------------------------------------------------------------*/
+.section-statistic .section-background {
+    background-color: var(--bg-ddgreen);
+}
+.list-statistic {
+    margin: 0 -15px;
+}
+.list-statistic .list-item {
+    padding: 15px;
+}
+.card-statistic {
+    padding: 30px 5px;
+    border: 1px solid var(--accent-color);
+}
+.card-statistic .card-title {
+    color: var(--accent-color);
+    font-size: 16px;
+}
+.card-statistic .counter-statistic {
+    font-size: 40px;
+    font-weight: 700;
+}
+/*----------------------------------------------------------------------------------*/
+.list-aboutus > * {
+    padding: 20px 0;
+}
+.card-aboutus {
+    flex-direction: row;
+}
+.card-aboutus .card-body {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.card-aboutus .card-body > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+.card-aboutus .card-image {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-right: 20px;
+    padding: 20px 22px;
+}
+.card-aboutus .card-image svg {
+    width: 30px;
+    height: 30px;
+}
